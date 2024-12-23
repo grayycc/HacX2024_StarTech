@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Next Page</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/styles-next.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="company-name">SoberGraphics.sg</h1>
+    </header>
+    <main class="main-content">
+      <p class="prompt-text">Please enter your request:</p>
+      <div class="prompt-container">
+        <input
+          type="text"
+          id="promptInput"
+          class="prompt-box"
+          placeholder="e.g. Make a poster to explain what drugs are for primary school children"
+        />
+        <button id="generateButton" class="btn generate-btn">Generate</button>
+        
+      </div>
+      <div class="dropdowns">
+        <div class="form-group">
+          <label for="dropdown1">Target Age Group:</label>
+          <select id="dropdown1" class="dropdown">
+            <option value="" disabled selected>Select an option</option>
+            <option value="1">Primary School Students</option>
+            <option value="2">Secondary School Students</option>
+            <option value="3">Pre-University Students</option>
+            <option value="4">National Service Men</option>
+            <option value="5">University Students</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="dropdown2">Type:</label>
+          <select id="dropdown2" class="dropdown">
+            <option value="" disabled selected>Select an option</option>
+            <option value="1">Poster</option>
+            <option value="2">Infographic</option>
+            <option value="3">Electronic Direct Mail</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="image-gallery">
+        <h2>Select Reference Material:</h2>
+        <div class="gallery-container">
+          <div class="gallery-thumbnail" data-value="1">
+            <img src="https://www.cnb.gov.sg/images/default-source/events-images/pde-toolkit-2024.png?sfvrsn=897e6439_0" alt="Image 1" />
+            <p>Preventive Drug Education Toolkit</p>
+          </div>
+          <div class="gallery-thumbnail" data-value="2">
+            <img src="https://www.cnb.gov.sg/images/default-source/educational-resources/pde-cnb-booklet-fa5aea07f114a46b78a186ff0000079eb0.jpg?sfvrsn=b84e6c39_2" alt="Image 2" />
+            <p>Growing Up Drug-Free: PDE Handbook for Parents</p>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="helloworld">Presented by:</h2>
+    
+      <div class="photos-container">
+        <div class="photo-container">
+          <div class="circle-background"></div>
+          <img
+            src="https://www.htx.gov.sg/images/default-source/htx-image-library/who-we-are_why-we-exist_logoe20dfc9c67824b68ba78e31fb41f5c9f.png?sfvrsn=c4524eb2_0"
+            alt="HTX Photo"
+            class="photo"
+          />
+        </div>
+        <div class="photo-container">
+          <div class="circle-background"></div>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/f/fd/Logo_for_Central_Narcotics_Bureau.jpg"
+            alt="CNB Photo"
+            class="photo"
+          />
+        </div>
+      </div>
+    </main>
+    <script src="/js/script.js"></script>
+  </body>
+  
+</html>

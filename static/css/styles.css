@@ -1,0 +1,113 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('https://st.depositphotos.com/3930503/59792/i/450/depositphotos_597928206-stock-photo-light-blue-gradient-background-blue.jpg');
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  color: #fefffe;
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 100px;
+  margin: 20px 0;
+}
+
+.yeseva-one-regular {
+  font-family: "Yeseva One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.josefin-sans {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.company-name {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #fefffe;
+}
+
+.transition-text {
+  font-size: 2em;
+  color: #fefffe;
+  transition: color 0.5s ease, transform 0.5s ease;
+  animation: fadeIn 2s backwards;
+}
+
+.transition-text:hover {
+  color: #fefffe; 
+  text-shadow: 0 0 5px #4775ff, 0 0 10px #4775ff, 0 0 15px #4775ff, 0 0 20px #4775ff; 
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  width: 100%;
+  max-width: 800px;
+  height: 100%; 
+  text-align: center;
+}
+
+.small-text {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.2rem; 
+  color: #fefffe;
+  margin-bottom: 0.5rem; 
+}
+
+.main-heading {
+  font-family: "Yeseva One", serif;
+  font-size: 6rem;
+  color: #fefffe;
+  margin: 0 0 0rem 0; 
+}
+
+.subtext {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.7rem;
+  color: #fefffe;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  padding: 0.75rem 2rem;
+  font-size: 1.2rem;
+  color: #fefffe;
+  background-color: #46c0bf;
+  border: none;
+  border-radius: 25px; 
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #2db7c3;
+  color: #fefffe;
+  font-weight: bold;
+  box-shadow: 0 0 10px #4d83ca, 0 0 10px #4d83ca, 0 0 20px #4d83ca; 
+  transform: scale(1.05);
+}
+
+
+@keyframes fadeIn {
+  to {
+      opacity: 1;
+  }
+}

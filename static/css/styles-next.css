@@ -1,0 +1,235 @@
+header {
+  width: 100%;
+  top: 0;
+  color: #fefffe;
+  padding: 0.5rem;
+  text-align: center;
+  display: block;
+  visibility: visible;
+  height: auto;
+  overflow: visible;
+  z-index: 10;
+  position: relative;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('https://st.depositphotos.com/3930503/59792/i/450/depositphotos_597928206-stock-photo-light-blue-gradient-background-blue.jpg');
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 150vh;
+  z-index: 10;
+  position: relative;
+}
+
+.yeseva-one-regular {
+  font-family: "Yeseva One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.josefin-sans {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.company-name {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fefffe;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px; 
+  padding: 0 2rem;
+  box-sizing: border-box;
+  text-align: center; 
+  margin: 0;
+  position: absolute;
+  top: 45%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.prompt-text {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 3rem;
+  color: #fefffe;
+  text-align: center;
+  align-self: center;
+  margin-bottom: 1rem;
+}
+
+.prompt-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1000px; 
+}
+
+.prompt-box {
+  flex: 1;
+  padding: 1rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px 0 0 5px;
+  margin-right: -1px; 
+  width: calc(100% - 120px); 
+  box-sizing: border-box;
+}
+
+.btn {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  color: #fefffe;
+  background-color: #46c0bf;
+  border: 1px solid #46c0bf;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #389493;
+}
+
+.additional-text {
+  font-size: 14px;
+  color: #fefffe;
+  margin-bottom: 20px;
+}
+
+.dropdowns {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.helloworld {
+  font-size: 1.5rem;
+  color: #fefffe;
+  margin-bottom: 1rem;
+}
+
+
+label {
+  font-size: 1rem;
+  color: #fefffe;
+  margin-bottom: 0.5rem;
+}
+
+.dropdown {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.photos-container {
+  display: flex;
+  justify-content: center; 
+  gap: 40px; 
+  margin-top: 20px; 
+}
+
+.photo-container {
+  position: relative;
+  width: 150px; 
+  height: 150px; 
+}
+
+.circle-background {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 180px; 
+  height: 180px;
+  background-color: white;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.photo {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: auto;
+  border-radius: 50%; 
+}
+
+
+.image-gallery {
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 1000px; 
+  text-align: center;
+}
+
+.image-gallery h2 {
+  font-size: 1.5rem;
+  color: #fefffe;
+  margin-bottom: 1rem;
+}
+
+.gallery-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap; 
+  margin-bottom: 2rem;
+}
+
+.gallery-thumbnail {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+  width: 150px; 
+  text-align: center;
+  transition: border-color 0.3s ease;
+}
+
+.gallery-thumbnail img {
+  width: 100%;
+  height: auto;
+}
+
+.gallery-thumbnail p {
+  margin: 0;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  color: #ddd;
+}
+
+.gallery-thumbnail:hover {
+  border-color: #46c0bf; 
+
+}
+
+.gallery-thumbnail.selected {
+  border-color: #46c0bf; 
+}
+

@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    overflow: hidden; 
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.container {
+    display: flex;
+    align-items: stretch; 
+    width: 100%;
+    max-width: 1200px; 
+}
+
+.sidebar {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 200px; 
+    height: 100vh; 
+}
+
+.editor-sidebar {
+    position: absolute;
+    left: 0;
+}
+
+.share-sidebar {
+    position: absolute;
+    right: 0;
+}
+
+.image-preview {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: 220px;
+    margin-right: 220px; 
+    height: 100vh; 
+    overflow-y: auto; 
+}
+
+.image-preview img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.tab-button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    background-color: #46c0bf;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    border-radius: 5px;
+}
+
+.tab-button.active {
+    background-color: #ccc;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+button {
+    padding: 10px;
+    background-color: #46c0bf;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #132348;
+}
+
+.back-button {
+    position: absolute;
+    bottom: 20px; 
+    left: 20px; 
+    padding: 10px 20px;
+    background-color: #46c0bf;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+}
+
+.back-button:hover {
+    background-color: #132348;
+}
